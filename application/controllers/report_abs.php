@@ -7,11 +7,19 @@ class Report_abs extends CI_Controller{
         $this->load->model('report_abs_m');
     }
 
-    function index(){
-        $data['title']			= "Reports Absensi";
+    function index(){  
+      //echo $this->uri->segment(5);
+      //echo $this->input->get('nik');
+        if('2020'=='2020'){
+          $get_nik = $this->report_abs_m->get_data_all_where('2020')->result();
+        }else{
+          $get_nik = $this->report_abs_m->get_data_all()->result();
+        }
+        $data['get_nik']      =  $this->report_abs_m->get_data_all_nik()->result();
+        $data['title']			  = "Reports Absensi".$this->uri->segment(3);
         $data['title_page']		= "Reports Absensi";
-        $data['page_content'] 	= "report_absensi_v";
-        $data['get_data']   = $this->report_abs_m->get_data_all()->result();
+        $data['page_content'] = "report_absensi_v";
+        $data['get_data']     = $get_nik;
         $this->load->view('utama_v', $data);
     }
 

@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v12.4.3 (64 bit)
-MySQL - 5.5.27 : Database - ta_leni
+MySQL - 5.5.27 : Database - ta_leny
 *********************************************************************
 */
 
@@ -12,9 +12,9 @@ MySQL - 5.5.27 : Database - ta_leni
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`ta_leni` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`ta_leny` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `ta_leni`;
+USE `ta_leny`;
 
 /*Table structure for table `absensi` */
 
@@ -37,39 +37,13 @@ insert  into `absensi`(`nik`,`date`,`time`,`status`,`activity`,`remarks`) values
 ('2020','2020-08-19','12:00:00','OUT','jalan','ok'),
 ('2020','2020-09-04','10:25:00','IN','masuk sore','projeck BCA'),
 ('2020','2020-09-04','10:25:33','OUT','aa','aa'),
+('2020','2020-09-13','09:47:41','IN','test 1','test 2'),
 ('2021','2020-09-03','07:41:45','IN','main ML','Langsung ok'),
 ('2021','2020-09-03','07:42:00','OUT','siap','ok'),
 ('2021','2020-09-04','04:03:29','IN','Pendingan JOB','Harian'),
 ('admin','2020-09-02','05:42:33','OUT','main ML','Pulang kuy'),
 ('admin','2020-09-03','05:38:24','IN','aa','aa'),
 ('admin','2020-09-03','06:50:53','OUT','main ML','coba ya');
-
-/*Table structure for table `buku` */
-
-DROP TABLE IF EXISTS `buku`;
-
-CREATE TABLE `buku` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `judul` varchar(255) NOT NULL,
-  `pengarang` varchar(255) NOT NULL,
-  `penerbit` varchar(255) NOT NULL,
-  `tahun` bigint(20) NOT NULL,
-  `jumlah_buku` int(11) NOT NULL,
-  `jumlah_eksemplar` int(11) NOT NULL,
-  `kategori` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
-
-/*Data for the table `buku` */
-
-insert  into `buku`(`id`,`judul`,`pengarang`,`penerbit`,`tahun`,`jumlah_buku`,`jumlah_eksemplar`,`kategori`) values 
-(1,'Twilight','Stephenie Meyer','Little Brown',2015,221,750000,'Fiksi'),
-(2,'Bumi Manusia','Pramoedya Anananta Toer','Hasta Mitra',1980,840,800000,'Fiksi Sejarah'),
-(3,'1000 Cara Memasak pemula','Mia Haryanti','Ar-Ruzz',2018,918,120000,'Teknik'),
-(4,'Dilan 1991 - Bagian Kedua','Pidi Baiq','Pastel Books',2014,3152,500000,'Fiksi'),
-(5,'Ayat ayat cinta','Habiburrahman El-Shirazy','Basmala',2004,5586,200000,'Fiksi Novel'),
-(6,'Mengenal Framework Bootstrap untuk UI Interaktif','Ahmad','Elexmedia',2017,221,40000,'Teknik'),
-(7,'Teknik Komposisi Audio Dasar Untuk Pemula','Ahmad','Melodi',2009,256,50000,'Teknik');
 
 /*Table structure for table `client` */
 
@@ -208,6 +182,7 @@ CREATE TABLE `spl` (
 
 insert  into `spl`(`nik`,`name`,`date`,`clock_in`,`clock_out`,`total_hour`,`convertion_hour`,`activity`) values 
 ('2020','Wahyudi','2020-09-04','18:00:00','21:00:00',3,NULL,'aaa'),
+('2020','Wahyudi','2020-09-13','08:00:00','17:00:00',0,NULL,'Tanggal Merah Hari raya'),
 ('admin','Leni','2020-09-01','17:00:00','22:00:00',4,NULL,'ngerjain Project'),
 ('admin','Leni','2020-09-03','16:00:00','20:00:00',5,NULL,'Rapihin berkas');
 

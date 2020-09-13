@@ -11,10 +11,29 @@
 								  <div class="form-group row">
 									<div class="col-sm-10">
 									  <button type="submit" class="btn btn-primary">Export Data Absensi</button>
+                                      
 									</div>
 								  </div>
 								</form>
-								
+
+								<form action="<?php echo base_url()?>report_abs" method="GET">
+                                    <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                            <label for="validationDefault02">Name</label>
+                                           <select name='nik' class="form-control" id="validationDefault02">
+                                                <?php
+                                                    foreach ($get_nik as $row) {
+                                                        echo "<option value='$row->nik'>$row->name  -  $row->nik </option>";    
+                                                    }
+                                                ?>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" type="submit">Result</button>
+                                    </div>
+                                </form>
 								<!-- form filter end -->
 							</div>
                         </div>
