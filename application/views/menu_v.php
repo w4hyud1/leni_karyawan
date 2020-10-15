@@ -15,6 +15,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="karyawan">Data Employee</a>
+                                    <a class="nav-link" href="employee_status">Employee Status</a>
                                     <a class="nav-link" href="position">Position</a>
                                     <a class="nav-link" href="client">Client / Vendor</a>
                                     <a class="nav-link" href="user_login">User Login</a>

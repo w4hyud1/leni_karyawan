@@ -1,0 +1,5 @@
+update data leny - 20201015
+
+- Update details karyawan
+- Table salary di pisah
+- 

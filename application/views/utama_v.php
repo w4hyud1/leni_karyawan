@@ -1,5 +1,5 @@
 <?php
-    if($_SESSION['role_id']==0){
+    if($_SESSION['level']=="admin"){
         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">You do not have access admin</div>');
         redirect ('login');
         // ('login');
