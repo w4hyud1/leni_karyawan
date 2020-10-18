@@ -17,8 +17,15 @@ class Login extends CI_Controller{
                 $data = [
                     'username'  => $user['username'],
                     'name'      => $user['name'],
-                    'level'   => $user['level']
+                    'level'     => $user['level']
                 ];
+                
+                //cek status inactive
+                if($user['status']=="inactive"){
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Sory username status is inactive</div>');
+                    redirect ('login');
+                }
+
                 $this->session->set_userdata($data);
                 if($user['level'] == 'staff'){
                     redirect ('absensi');

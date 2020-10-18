@@ -51,8 +51,8 @@
                                                         <td>$row->phone</td>
                                                         <td>$row->npwp</td>
                                                         <td>
-                                                            <a href='".base_url()."client/edit/".$row->id."'> <button type='submit' class='btn btn-primary'>Edit</button></a>
-                                                            <a href='".base_url()."client/delete/".$row->id."'> <button type='submit' class='btn btn-primary'>Delete</button></a>
+                                                            <a href='".base_url()."client/edit/".$row->id."'> <button type='submit' class='btn btn-primary btn-sm'>Edit</button></a>
+                                                            <a href='".base_url()."client/delete/".$row->id."'> <button type='submit' class='btn btn-danger btn-sm'>Delete</button></a>
                                                         </td>
                                                     </tr>";
                                             }

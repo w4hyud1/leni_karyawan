@@ -12,7 +12,7 @@
 	<div class="card mb-4">
 		<div class="card-header"><i class="fas fa-table mr-1"></i>New Karyawan</div>
 		<div class="card-body">
-			<form action="<?php echo base_url()?>karyawan/update" method="POST">
+			<form action="<?php echo base_url()?>employee/update" method="POST">
 				<div class="form-row">
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault01">NIK</label>
@@ -117,19 +117,101 @@
 						<label for="validationDefault03">email</label>
 						<input type="email" name="email" class="form-control"  placeholder="email" value="<?php echo $data->email?>" required>
 					</div>
+				</div>
+				<!-- edit data new  -->
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">ID Type</label>
+						<input type="text" name="id_type" class="form-control" placeholder="ID Type" value="<?php echo $data->id_type?>" required>
+					</div>
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">ID Number</label>
 						<input type="text" name="id_number" class="form-control"placeholder="ID Number" value="<?php echo $data->id_number?>" required>
 					</div>
 					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">ID Type</label>
-						<input type="text" name="id_type" class="form-control" placeholder="ID Type" value="<?php echo $data->id_type?>" required>
+						<label for="validationDefault05">Card Expired</label>
+						<input type="text" name="card_expired" class="form-control" placeholder="Card Expired" value="<?php echo $data->card_expired?>" required>
 					</div>
 				</div>
 
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Street</label>
+						<input type="text" name="street" class="form-control" placeholder="Street" value="<?php echo $data->street?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">City</label>
+						<input type="text" name="city" class="form-control"placeholder="City" value="<?php echo $data->city?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Country</label>
+						<input type="text" name="country" class="form-control" placeholder="Country" value="<?php echo $data->country?>" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">State</label>
+						<input type="text" name="state" class="form-control" placeholder="State" value="<?php echo $data->state?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Original Street</label>
+						<input type="text" name="original_street" class="form-control"placeholder="Original State" value="<?php echo $data->original_street?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Original City</label>
+						<input type="text" name="original_city" class="form-control" placeholder="Original City" value="<?php echo $data->original_city?>" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">NPWP</label>
+						<input type="text" name="npwp" class="form-control" placeholder="NPWP" value="<?php echo $data->npwp?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">PTKP Code</label>
+						<input type="text" name="ptkp_code" class="form-control"placeholder="PTKP Code" value="<?php echo $data->ptkp_code?>">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Allowance</label>
+						<input type="text" name="allowance" class="form-control" placeholder="Allowance" value="<?php echo $data->allowance?>">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Overtime Allowance</label>
+						<input type="text" name="overtime_allowance" class="form-control" placeholder="Overtime Allowance" value="<?php echo $data->overtime_allowance?>">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Education Level</label>
+						<input type="text" name="education_level" class="form-control"placeholder="Education Level" value="<?php echo $data->education_level?>">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Education Major</label>
+						<input type="text" name="education_major" class="form-control" placeholder="Education Major" value="<?php echo $data->education_major?>" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Institution Name</label>
+						<input type="text" name="institution_name" class="form-control" placeholder="Institution Name" value="<?php echo $data->institution_name?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Graduation Year</label>
+						<input type="text" name="graduation_year" class="form-control"placeholder="Graduation Year" value="<?php echo $data->graduation_year?>" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Billing Rate</label>
+						<input type="date" name="billing_rate" class="form-control" placeholder="Billing Rate" value="<?php echo $data->billing_rate?>" >
+					</div>
+				</div>
 
 				<div class="form-group">
 					<button class="btn btn-primary" type="submit">Update Data</button>
+					<button class="btn btn-danger" type="submit" onclick="history.back()">Back form</button>
 			</form>
 
 		</div>

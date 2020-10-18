@@ -5,7 +5,7 @@
 		<li class="breadcrumb-item active"><?php echo $title_page?></li>
 	</ol>
 	<div class="card mb-4">
-		<div class="card-header"><i class="fas fa-table mr-1"></i>New Karyawan</div>
+		<div class="card-header"><i class="fas fa-table mr-1"></i>New Employee</div>
 		<div class="card-body">
 			<form action="save" method="POST">
 				<div class="form-row">
@@ -97,19 +97,101 @@
 						<label for="validationDefault03">email</label>
 						<input type="email" name="email" class="form-control"  placeholder="email" required>
 					</div>
+				</div>
+				<!-- edit data new  -->
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">ID Type</label>
+						<input type="text" name="id_type" class="form-control" placeholder="ID Type" required>
+					</div>
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">ID Number</label>
 						<input type="text" name="id_number" class="form-control"placeholder="ID Number" required>
 					</div>
 					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">ID Type</label>
-						<input type="text" name="id_type" class="form-control" placeholder="ID Type" required>
+						<label for="validationDefault05">Card Expired</label>
+						<input type="text" name="card_expired" class="form-control" placeholder="Card Expired" required>
 					</div>
 				</div>
 
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Street</label>
+						<input type="text" name="street" class="form-control" placeholder="Street" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">City</label>
+						<input type="text" name="city" class="form-control"placeholder="City" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Country</label>
+						<input type="text" name="country" class="form-control" placeholder="Country" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">State</label>
+						<input type="text" name="state" class="form-control" placeholder="State" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Original Street</label>
+						<input type="text" name="original_street" class="form-control"placeholder="Original State" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Original City</label>
+						<input type="text" name="original_city" class="form-control" placeholder="Original City" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">NPWP</label>
+						<input type="text" name="npwp" class="form-control" placeholder="NPWP" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">PTKP Code</label>
+						<input type="text" name="ptkp_code" class="form-control"placeholder="PTKP Code" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Allowance</label>
+						<input type="text" name="allowance" class="form-control" placeholder="Allowance" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Overtime Allowance</label>
+						<input type="text" name="overtime_allowance" class="form-control" placeholder="Overtime Allowance" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Education Level</label>
+						<input type="text" name="education_level" class="form-control"placeholder="Education Level" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Education Major</label>
+						<input type="text" name="education_major" class="form-control" placeholder="Education Major" >
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Institution Name</label>
+						<input type="text" name="institution_name" class="form-control" placeholder="Institution Name" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault04">Graduation Year</label>
+						<input type="text" name="graduation_year" class="form-control"placeholder="Graduation Year" >
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault05">Billing Rate</label>
+						<input type="date" name="billing_rate" class="form-control" placeholder="Billing Rate" >
+					</div>
+				</div>
 
 				<div class="form-group">
 					<button class="btn btn-primary" type="submit">Submit form</button>
+					<button class="btn btn-danger" type="submit" onclick="history.back()">Back form</button>
 			</form>
 
 		</div>
