@@ -17,33 +17,40 @@ class Login extends CI_Controller{
                 $data = [
                     'username'  => $user['username'],
                     'name'      => $user['name'],
-                    'role_id'   => $user['role_id']
+                    'level'     => $user['level']
                 ];
+                
+                //cek status inactive
+                if($user['status']=="inactive"){
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Sory username status is inactive</div>');
+                    redirect ('login');
+                }
+
                 $this->session->set_userdata($data);
-                if($user['role_id'] == 1){
-                    redirect ('');
-                }else{
+                if($user['level'] == 'staff'){
                     redirect ('absensi');
+                }else{
+                    redirect ('');
                 }
                 
             } else {
                 
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password</div>');
-                redirect ('auth1'.$password);
-                echo $username ."pass : ". $password;
+                redirect ('login');
+                //echo $username ."pass : ". $password;
             }
         }else {
             
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username is not registered</div>');
-            redirect('auth2');
-            echo $username ."pass : ". $password;
+            redirect('login');
+            //echo $username ."pass : ". $password;
         }
     }
 
     public function logout()
     {
         $this->session->unset_userdata('username');
-        $this->session->unset_userdata('role_id');
+        $this->session->unset_userdata('level');
 
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been logged out!</div>');
         redirect('login');

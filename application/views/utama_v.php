@@ -1,5 +1,9 @@
 <?php
-    if($_SESSION['role_id']==0){
+    if(empty($_SESSION['level'])){
+        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">To log in please login first!</div>');
+        redirect ('login'); 
+    }
+    if($_SESSION['level']<>"admin"){
         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">You do not have access admin</div>');
         redirect ('login');
         // ('login');
@@ -33,7 +37,7 @@
             <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['name']?> <i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['name'] ." - ". $_SESSION['level'] ?> <i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
@@ -46,7 +50,12 @@
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <?php
-					$this->load->view("menu_v");
+                    if($_SESSION['level']=="manager"){
+                        $this->load->view("menu_mgr_v");
+                    }else{
+                        $this->load->view("menu_v");
+                    }
+					
 				?>
             </div>
             <div id="layoutSidenav_content">
@@ -69,11 +78,11 @@
                 </footer>
             </div>
         </div>
-        <script src="assets/js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-        <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-        <script src="assets/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url()?>assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url()?>assets/js/scripts.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url()?>assets/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 		
 		<script>
 			// Call the dataTables jQuery plugin

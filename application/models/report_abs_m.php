@@ -2,7 +2,11 @@
     class Report_abs_m extends CI_Model{
         
         function get_data_all(){
-            return $this->db->query("SELECT absensi.*,karyawan.name FROM absensi LEFT JOIN karyawan ON absensi.nik=karyawan.nik");
+            return $this->db->query("SELECT a.*,e.name FROM absensi a LEFT JOIN employee e ON a.nik=e.nik");
+        }
+        
+        function get_data_all_where($nik){
+            return $this->db->query("SELECT a.*,e.name FROM absensi a LEFT JOIN employee e ON a.nik=e.nik and a.nik='$nik'");
         }
 
         function get_data_where(){
@@ -24,6 +28,12 @@
             $this->db->like('date', $date_ym);
             return $this->db->get('absensi');
         }
+
+        function get_data_all_nik(){
+            return $this->db->query("select a.nik, e.name from absensi a left join employee e on a.nik=e.nik group by a.nik");
+        }
+
+        
     }
     
 ?>

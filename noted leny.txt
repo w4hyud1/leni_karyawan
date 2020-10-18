@@ -1,0 +1,12 @@
+update data leny - 20201015
+
+- Update details karyawan
+- Table salary di pisah -> bisa di view manager
+- alert status karyawan inactive dashboard
+- masukin alert by email 2 bulan
+
+staff
+manager
+supervisor
+admin
+

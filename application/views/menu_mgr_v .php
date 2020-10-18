@@ -16,6 +16,7 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?php echo base_url()?>employee">Data Employee</a>
                                     <a class="nav-link" href="<?php echo base_url()?>employee_status">Employee Status</a>
+                                    <a class="nav-link" href="<?php echo base_url()?>employee_bank">Employee Bank & Salary</a>
                                     <a class="nav-link" href="<?php echo base_url()?>position">Position</a>
                                     <a class="nav-link" href="<?php echo base_url()?>client">Client / Vendor</a>
                                     <a class="nav-link" href="<?php echo base_url()?>user_login">User Login</a>

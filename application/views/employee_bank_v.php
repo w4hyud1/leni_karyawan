@@ -6,16 +6,14 @@
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-								<!-- form filter -->
-								<form action="<?php echo base_url()."karyawan/add" ?>">
+                                <?= $this->session->flashdata('message'); ?>
+								<form action="<?php echo base_url()."employee_bank/add"?> ">
 								  <div class="form-group row">
 									<div class="col-sm-10">
 									  <button type="submit" class="btn btn-primary">New Data</button>
 									</div>
 								  </div>
 								</form>
-								
-								<!-- form filter end -->
 							</div>
                         </div>
                         <div class="card mb-4">
@@ -27,9 +25,11 @@
                                             <tr>
                                                 <th>NIK</th>
                                                 <th>Name</th>
-                                                <th>Gender</th>
-                                                <th>Birth Date</th>
-                                                <th>Position</th>
+                                                <th>Name Bank</th>
+                                                <th>Bank Account</th>
+                                                <th>Salary</th>
+                                                <th>Contract Period</th>
+                                                <th>Status</th>
                                                 <th>Edit | Delete</th>
                                             </tr>
                                         </thead>
@@ -37,25 +37,29 @@
                                             <tr>
                                                 <th>NIK</th>
                                                 <th>Name</th>
-                                                <th>Gender</th>
-                                                <th>Birth Date</th>
-                                                <th>Position</th>
+                                                <th>Name Bank</th>
+                                                <th>Bank Account</th>
+                                                <th>Salary</th>
+                                                <th>Contract Period</th>
+                                                <th>Status</th>
                                                 <th>Edit | Delete</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
 
                                         <?php
-                                            foreach ($get_all as $row) {
+                                            foreach ($get_data as $row) {
                                                 echo "<tr>
                                                         <td>$row->nik</td>
                                                         <td>$row->name</td>
-                                                        <td>$row->gender</td>
-                                                        <td>$row->birth_date</td>
-                                                        <td>$row->position</td>
+                                                        <td>$row->name_of_bank</td>
+                                                        <td>$row->bank_account</td>
+                                                        <td>$row->salary</td>
+                                                        <td>$row->contract_of_period</td>
+                                                        <td>$row->status</td>
                                                         <td>
-                                                            <a href='".base_url()."karyawan/edit/".$row->nik."'> <button type='submit' class='btn btn-primary'>Edit</button></a>
-                                                            <a href='".base_url()."karyawan/delete/".$row->nik."'> <button type='submit' class='btn btn-primary'>Delete</button></a>
+                                                            <a href='".base_url()."employee_bank/edit/".$row->nik."'> <button type='submit' class='btn btn-primary btn-sm'>Edit</button></a>
+                                                            <a href='".base_url()."employee_bank/delete/".$row->nik."'> <button type='submit' class='btn btn-danger btn-sm'>Delete</button></a>
                                                         </td>
                                                     </tr>";
                                             }
