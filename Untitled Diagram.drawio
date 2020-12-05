@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-05T06:27:17.907Z" agent="5.0 (Windows)" etag="yRmxuCtJyBjuQXRgz40u" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-05T06:39:12.602Z" agent="5.0 (Windows)" etag="WIOjlzCFCtQH4JRlqPnB" version="13.10.9" type="github">
   <diagram id="mtBHWYNByoEXzdDorYb6" name="Page-1">
     <mxGraphModel dx="1117" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -25,10 +25,10 @@
         <mxCell id="doo02vCnR_QYg1kmZy5R-10" value="Password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="60" y="150" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="doo02vCnR_QYg1kmZy5R-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="doo02vCnR_QYg1kmZy5R-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="260" y="200" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="doo02vCnR_QYg1kmZy5R-12" value="Login" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="doo02vCnR_QYg1kmZy5R-12" value="Login" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="280" y="205" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="doo02vCnR_QYg1kmZy5R-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
