@@ -13,7 +13,7 @@
 								<div class="row">
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card bg-primary text-white mb-4">
-                                        <div class="card-body">Primary Count <?php echo $employee_all->jml?></div>
+                                        <div class="card-body">All Employees <?php echo $employee_all->jml?></div>
                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                             <a class="small text-white stretched-link" href="<?php echo base_url()?>employee_status">View Details</a>
                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card bg-warning text-white mb-4">
-                                        <div class="card-body">Warning Count <?php echo $employee_warning->jml?></div>
+                                        <div class="card-body">Employees Approaching Inactive <?php echo $employee_warning->jml?></div>
                                         <div class="card-footer d-flex align-items-center justify-content-between">
                                             <a class="small text-white stretched-link" href="<?php echo base_url()?>employee_status">View Details</a>
                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -40,9 +40,9 @@
                                 </div> -->
                                 <div class="col-xl-4 col-md-6">
                                     <div class="card bg-danger text-white mb-4">
-                                        <div class="card-body">Danger Count <?php echo $employee_danger->jml?> </div>
+                                        <div class="card-body">Alert Status Cuti Pending <?php echo $count_alert_cuti->jml?> </div>
                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                            <a class="small text-white stretched-link" href="<?php echo base_url()?>employee_status">View Details</a>
+                                            <a class="small text-white stretched-link" href="<?php echo base_url()?>report_cuti">View Details</a>
                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                     </div> -->
 
                     <div class="card mb-4">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>Employee Status</div>
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Birthday Employee</div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -67,40 +67,23 @@
                                             <tr>
                                                 <th>NIK</th>
                                                 <th>Name</th>
-                                                <th>Period Contract</th>
-                                                <th>Join Date</th>
-                                                <th>End Date</th>
-                                                <th>Inactive Date</th>
-                                                <th>Status</th>
+                                                <th>Birth Date</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
                                                 <th>NIK</th>
                                                 <th>Name</th>
-                                                <th>Period Contract</th>
-                                                <th>Join Date</th>
-                                                <th>End Date</th>
-                                                <th>Inactive Date</th>
-                                                <th>Status</th>
+                                                <th>Birth Date</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
                                         <?php
                                              foreach ($get_data as $row) {
-                                                if($row->inactive_date<>"0000-00-00"){
-                                                    $status = "Inactive";
-                                                }else{
-                                                    $status = "Active";
-                                                }
                                                 echo "<tr>
                                                         <td>$row->nik</td>
                                                         <td>$row->name</td>
-                                                        <td>$row->contract_of_period</td>
-                                                        <td>$row->join_date</td>
-                                                        <td>$row->end_date</td>
-                                                        <td>$row->inactive_date</td>
-                                                        <td>$status</td>
+                                                        <td>$row->birth_date</td>
                                                     </tr>";
                                             }
                                         ?>

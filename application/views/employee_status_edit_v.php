@@ -38,6 +38,14 @@
 						<label for="validationDefault02">Inactive Reason</label>
 						<input type="text" name="inactive_reason" class="form-control" placeholder="Inactive Reason" value="<?php echo $get_data->inactive_reason?>">
 					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationDefault02">Status</label>
+						<select name="status" class="form-control">
+							<option value="Active">Active</option>
+							<option value="Active">Inactive</option>
+							<option value="Active">Cancel</option>
+						</select>
+					</div>
 				</div>
 
 				<div class="form-group">

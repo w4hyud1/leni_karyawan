@@ -50,8 +50,41 @@ class Employee_status_m extends CI_Model{
         $this->db->delete('employee_status');
     }
 
+    function set_cuti(){
+        $this->db->query("UPDATE employee_status SET cuti=12-MONTH(join_date) WHERE YEAR(join_date)=YEAR(NOW());");
+    }
+
+    function set_cuti_12(){
+        $this->db->query("UPDATE employee_status SET cuti=12 WHERE YEAR(join_date)<>YEAR(NOW());");
+    }
+
+    function update_cuti2(){
+        date_default_timezone_set('Asia/Jakarta');
+        $query = $this->db->query("UPDATE employee_status es
+        JOIN (SELECT nik, COUNT(nik) AS cuti FROM cuti WHERE status='Approve' AND YEAR(date)=YEAR(NOW()) GROUP BY nik) AS c
+        ON es.nik=c.nik
+        SET es.cuti=es.cuti-c.cuti,
+           es.upddate=NOW()");
+        
+    }
+
+    function update_cuti(){
+        date_default_timezone_set('Asia/Jakarta');
+        $query = $this->db->query("SELECT nik,COUNT(*) AS count_cuti FROM cuti WHERE status='Approve' GROUP BY nik");
+        $row = $query->row();
+        $num_row = $query->num_rows();
+        for($i = 1; $i <= $num_row; $i++){
+            $query = $this->db->query("SELECT nik,COUNT(*) AS count_cuti FROM cuti WHERE status='Approve' and nik='$row->nik' GROUP BY nik")->row();
+            $row2 = $this->db->query("SELECT nik,cuti,contract_of_period FROM employee_status WHERE status='Active' AND nik='$query->nik'")->row();
+            if(isset($row2)){
+                $saldo_cuti = $row2->cuti;
+                $cuti       = $query->count_cuti;
+                $sisa_cuti=$saldo_cuti-$cuti;
+                $query_update = $this->db->query("UPDATE employee_status SET cuti='$sisa_cuti', upddate=now() where nik='$query->nik' and contract_of_period='$row2->contract_of_period'") ;
+            }
+        }
+    }
 
 }
-
 
 ?>

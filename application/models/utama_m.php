@@ -10,7 +10,7 @@
             return $this->db->query("SELECT 
                                 COUNT(*) AS jml,
                                 TIMESTAMPDIFF(MONTH, end_date, NOW()) AS selisih_bulan 
-                            FROM employee_status WHERE TIMESTAMPDIFF(MONTH, end_date, NOW())>=-2 AND inactive_date='0000-00-00'");
+                            FROM employee_status WHERE TIMESTAMPDIFF(MONTH, end_date, NOW())>=2 AND inactive_date='0000-00-00'");
        }
 
        function count_employee_danger(){
@@ -21,8 +21,13 @@
         }
 
         function get_all(){
-            return $this->db->query("select es.*, e.name from employee_status es left join employee e on es.nik=e.nik where es.inactive_date='0000:00:00';");
+            $month = date("m");
+           return $this->db->query("SELECT * FROM employee WHERE MONTH(`birth_date`)=$month");
             //echo $this->db->last_query(); exit;
+        }
+
+        function count_alert_cuti(){
+            return $this->db->query("SELECT COUNT(*) AS jml FROM cuti WHERE STATUS='Pending' AND YEAR(DATE)=YEAR(NOW())");
         }
 
 

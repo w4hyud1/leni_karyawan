@@ -11,7 +11,8 @@
                                 DISTINCT(nik) AS username, 
                                 name, 
                                 'staff' AS levek, 
-                                '123' AS PASSWORD  
+                                '123' AS PASSWORD,
+                                'Active' as status
                                 FROM employee 
                                 WHERE 
                                 nik NOT IN (SELECT username FROM user_login)");

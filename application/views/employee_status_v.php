@@ -47,6 +47,7 @@
                                                 <th>Join Date</th>
                                                 <th>End Date</th>
                                                 <th>Inactive Date</th>
+                                                <th>Cuti</th>
                                                 <th>Status</th>
                                                 <th>Edit | Delete</th>
                                             </tr>
@@ -59,6 +60,7 @@
                                                 <th>Join Date</th>
                                                 <th>End Date</th>
                                                 <th>Inactive Date</th>
+                                                <th>Cuti</th>
                                                 <th>Status</th>
                                                 <th>Edit | Delete</th>
                                             </tr>
@@ -67,11 +69,6 @@
 
                                         <?php
                                             foreach ($get_data as $row) {
-                                                if($row->inactive_date<>"0000-00-00"){
-                                                    $status = "Inactive";
-                                                }else{
-                                                    $status = "Active";
-                                                }
                                                 echo "<tr>
                                                         <td>$row->nik</td>
                                                         <td>$row->name</td>
@@ -79,7 +76,8 @@
                                                         <td>$row->join_date</td>
                                                         <td>$row->end_date</td>
                                                         <td>$row->inactive_date</td>
-                                                        <td>$status</td>
+                                                        <td>$row->cuti</td>
+                                                        <td>$row->status</td>
                                                         <td>
                                                             <a href='".base_url()."employee_status/edit/".$row->nik."'> <button type='submit' class='btn btn-primary btn-sm'>Edit</button></a>
                                                             <a href='".base_url()."employee_status/delete/".$row->nik."'> <button type='submit' class='btn btn-danger btn-sm'>Delete</button></a>

@@ -23,7 +23,7 @@
 							<?php
             foreach ($get_client as $row) {
               $id_name = $row->id." - ".$row->name;
-              echo "<option value='$row->id'>$id_name</option>";
+              echo "<option value='$row->id'>$row->name</option>";
             }
           ?>
 						</select>
@@ -45,7 +45,7 @@
 							<?php
             foreach ($get_jabatan as $row) {
               $id_name = $row->id." - ".$row->name;
-              echo "<option value='$row->name'>$id_name</option>";
+              echo "<option value='$row->name'>$row->name</option>";
             }
           ?>
 						</select>
@@ -72,8 +72,8 @@
 
 				<div class="form-row">
 					<div class="col-md-4 mb-3">
-						<label for="validationDefault03">City Zenship</label>
-						<input type="text" name="cityzenship" class="form-control" placeholder="City Zenship" required>
+						<label for="validationDefault03">Citizenship</label>
+						<input type="text" name="cityzenship" class="form-control" placeholder="Citizenship" required>
 					</div>
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">Number Phone</label>
@@ -154,27 +154,16 @@
 						<input type="text" name="ptkp_code" class="form-control"placeholder="PTKP Code" >
 					</div>
 					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">Allowance</label>
-						<input type="text" name="allowance" class="form-control" placeholder="Allowance" >
-					</div>
-				</div>
-
-				<div class="form-row">
-					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">Overtime Allowance</label>
-						<input type="text" name="overtime_allowance" class="form-control" placeholder="Overtime Allowance" >
-					</div>
-					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">Education Level</label>
 						<input type="text" name="education_level" class="form-control"placeholder="Education Level" >
 					</div>
+				</div>
+
+				<div class="form-row">					
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault05">Education Major</label>
 						<input type="text" name="education_major" class="form-control" placeholder="Education Major" >
 					</div>
-				</div>
-
-				<div class="form-row">
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault05">Institution Name</label>
 						<input type="text" name="institution_name" class="form-control" placeholder="Institution Name" >
@@ -183,9 +172,11 @@
 						<label for="validationDefault04">Graduation Year</label>
 						<input type="text" name="graduation_year" class="form-control"placeholder="Graduation Year" >
 					</div>
+				</div>
+				<div class="form-row">
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault05">Billing Rate</label>
-						<input type="date" name="billing_rate" class="form-control" placeholder="Billing Rate" >
+						<input type="text" name="billing_rate" class="form-control" placeholder="Billing Rate" >
 					</div>
 				</div>
 

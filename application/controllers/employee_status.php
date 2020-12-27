@@ -10,6 +10,7 @@ class Employee_status extends CI_Controller{
     public function index(){
         //echo $this->uri->segment(4);
         $status = $this->input->get('status');
+        $this->set_and_update_cuti();
         //echo $status;
         if(isset($_GET['status'])){
             $get_nik = $this->employee_status_m->get_all_where($status)->result();
@@ -82,6 +83,12 @@ class Employee_status extends CI_Controller{
         $this->session->set_flashdata('message', '<div class="alert alert-info" role="alert">Sucess delete data</div>');
         redirect ('employee_status');
 
+    }
+
+    function set_and_update_cuti(){
+        $this->employee_status_m->set_cuti();
+        $this->employee_status_m->set_cuti_12();
+        $this->employee_status_m->update_cuti2();
     }
     
 }

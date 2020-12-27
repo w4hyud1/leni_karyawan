@@ -25,6 +25,7 @@
                         <div class="form-group mt-4 mb-8">
                             <a href="<?php echo base_url().'absensi'?>"><button class="btn btn-primary">Absensi</button></a>
                             <a href="<?php echo base_url().'spl'?>"><button class="btn btn-primary">Over Time</button></a>
+                            <a href="<?php echo base_url().'cuti'?>"><button class="btn btn-primary">Cuti</button></a>
                             <a href="<?php echo base_url().'login/logout'?>"><button class="btn btn-danger">Logout</button></a>
                         </div>
                         </div>
@@ -68,14 +69,6 @@
                                             <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Remarks</label>
                                                 <input name="remarks" class="form-control py-4" id="inputEmailAddress" type="text" placeholder="Remarks" />
                                             </div>
-                                            <!-- <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" /></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputConfirmPassword">Confirm Password</label><input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" /></div>
-                                                </div>
-                                            </div> -->
                                             <div class="form-group mt-4 mb-0"><button class="btn btn-primary btn-block">Save</button></div>
                                         </form>
                                     </div>
@@ -85,8 +78,8 @@
                                         <table class="table table-sm">
                                             <thead>
                                                 <tr>
-                                                <th>Time</th>
-                                                <th>Status</th>
+                                                <th>Clock In</th>
+                                                <th>Clock Out</th>
                                                 <th>Activity</th>
                                                 <th>Remarks</th>
                                                 </tr>
@@ -95,8 +88,8 @@
                                                 <?php
                                                     foreach ($get_data as $row) {
                                                     echo "<tr>
-                                                            <td>$row->time</td>
-                                                            <td>$row->status</td>
+                                                            <td>$row->clock_in</td>
+                                                            <td>$row->clock_out</td>
                                                             <td>$row->activity</td>
                                                             <td>$row->remarks</td>
                                                          </tr>" ;       

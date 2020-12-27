@@ -37,13 +37,13 @@ class Login extends CI_Controller{
                 
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password</div>');
                 redirect ('login');
-                //echo $username ."pass : ". $password;
+                // echo $username ."pass : ". $password;
             }
         }else {
             
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username is not registered</div>');
             redirect('login');
-            //echo $username ."pass : ". $password;
+            // echo $username ."pass : ". $password;
         }
     }
 

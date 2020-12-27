@@ -10,8 +10,13 @@ class Employee_m extends CI_Model{
         return $old_nik;
     }
 
-    function save_data($data){
+    function save_data($data, $nik, $name){
+        $date = date("Y-m-d");
         $this->db->insert('employee',$data);
+        // Update table employee_bank, employee_status, user_login
+        $this->db->query("insert into employee_bank (nik) value ('$nik')");
+        $this->db->query("insert into employee_status (nik, contract_of_period, status, upddate) value ('$nik','1', 'Active', '$date' )");
+        $this->db->query("insert into user_login (username, name, level, password, status) value ('$nik', '$name', 'Staff', '123', 'Active')");
     }
 
     function delete_data($data){

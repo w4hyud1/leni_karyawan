@@ -60,15 +60,15 @@ class Employee extends CI_Controller{
             'original_city'     => $this->input->post("original_city"),
             'npwp'              => $this->input->post("npwp"),
             'ptkp_code'         => $this->input->post("ptkp_code"),
-            'allowance'         => $this->input->post("allowance"),
-            'overtime_allowance'=> $this->input->post("overtime_allowance"),
             'education_level'   => $this->input->post("education_level"),
             'education_major'   => $this->input->post("education_major"),
             'institution_name'  => $this->input->post("institution_name"),
             'graduation_year'   => $this->input->post("graduation_year"),
             'billing_rate'      => $this->input->post("billing_rate")         
         );
-        $this->employee_m->save_data($data);
+        $nik  = $this->input->post("nik");
+        $name = $this->input->post("name");
+        $this->employee_m->save_data($data, $nik, $name);
         redirect('employee');        
     }
 
@@ -120,8 +120,6 @@ class Employee extends CI_Controller{
             'original_city'     => $this->input->post("original_city"),
             'npwp'              => $this->input->post("npwp"),
             'ptkp_code'         => $this->input->post("ptkp_code"),
-            'allowance'         => $this->input->post("allowance"),
-            'overtime_allowance'=> $this->input->post("overtime_allowance"),
             'education_level'   => $this->input->post("education_level"),
             'education_major'   => $this->input->post("education_major"),
             'institution_name'  => $this->input->post("institution_name"),

@@ -18,6 +18,8 @@
                                     <a class="nav-link" href="<?php echo base_url()?>employee_status">Employee Status</a>
                                     <a class="nav-link" href="<?php echo base_url()?>position">Position</a>
                                     <a class="nav-link" href="<?php echo base_url()?>client">Client / Vendor</a>
+                                    <a class="nav-link" href="<?php echo base_url()?>list_cuti">List Cuti</a>
+                                    <a class="nav-link" href="<?php echo base_url()?>list_national_holiday">List National Holiday</a>
                                     <a class="nav-link" href="<?php echo base_url()?>user_login">User Login</a>
                                 </nav>
                             </div>
@@ -31,6 +33,9 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?php echo base_url()."report_abs"?>">Absensi </a>
                                     <a class="nav-link" href="<?php echo base_url()."report_spl"?>">Over Time</a>
+                                    <a class="nav-link" href="<?php echo base_url()."approve_spl"?>">Approve Over Time</a>
+                                    <a class="nav-link" href="<?php echo base_url()."report_cuti"?>">Cuti </a>
+                                    <a class="nav-link" href="<?php echo base_url()."report_sick"?>">Sick </a>
                                 </nav>
                             </div>
 

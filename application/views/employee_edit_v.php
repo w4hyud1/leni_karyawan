@@ -29,9 +29,9 @@
 								foreach ($get_client as $row) {
 									$id_name = $row->id." - ".$row->name;
 									if($row->id == $data->id_client){
-										echo "<option value='$row->id' selected>$id_name</option>";	
+										echo "<option value='$row->id' selected>$row->name</option>";	
 									}else{
-										echo "<option value='$row->id'>$id_name</option>";
+										echo "<option value='$row->id'>$row->name</option>";
 									}	
 								}
 							?>
@@ -55,9 +55,9 @@
 								foreach ($get_jabatan as $row) {
 									$id_name = $row->id." - ".$row->name;
 									if($row->id==$data->position){
-										echo "<option value='$row->name' selected>$id_name</option>";
+										echo "<option value='$row->name' selected>$row->name</option>";
 									}else{
-										echo "<option value='$row->name'>$id_name</option>";
+										echo "<option value='$row->name'>$row->name</option>";
 									}
 								}
 							?>
@@ -92,8 +92,8 @@
 
 				<div class="form-row">
 					<div class="col-md-4 mb-3">
-						<label for="validationDefault03">City Zenship</label>
-						<input type="text" name="cityzenship" class="form-control" placeholder="City Zenship" value="<?php echo $data->cityzenship?>" required>
+						<label for="validationDefault03">Citizenship</label>
+						<input type="text" name="cityzenship" class="form-control" placeholder="Citizenship" value="<?php echo $data->cityzenship?>" required>
 					</div>
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">Number Phone</label>
@@ -173,17 +173,9 @@
 						<label for="validationDefault04">PTKP Code</label>
 						<input type="text" name="ptkp_code" class="form-control"placeholder="PTKP Code" value="<?php echo $data->ptkp_code?>">
 					</div>
-					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">Allowance</label>
-						<input type="text" name="allowance" class="form-control" placeholder="Allowance" value="<?php echo $data->allowance?>">
-					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-md-4 mb-3">
-						<label for="validationDefault05">Overtime Allowance</label>
-						<input type="text" name="overtime_allowance" class="form-control" placeholder="Overtime Allowance" value="<?php echo $data->overtime_allowance?>">
-					</div>
 					<div class="col-md-4 mb-3">
 						<label for="validationDefault04">Education Level</label>
 						<input type="text" name="education_level" class="form-control"placeholder="Education Level" value="<?php echo $data->education_level?>">

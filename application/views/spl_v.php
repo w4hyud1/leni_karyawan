@@ -27,6 +27,7 @@
                         <div class="form-group mt-4 mb-8">
                             <a href="<?php echo base_url().'absensi'?>"><button class="btn btn-primary">Absensi</button></a>
                             <a href="<?php echo base_url().'spl'?>"><button class="btn btn-primary">Over Time</button></a>
+                            <a href="<?php echo base_url().'cuti'?>"><button class="btn btn-primary">Cuti</button></a>
                             <a href="<?php echo base_url().'login/logout'?>"><button class="btn btn-danger">Logout</button></a>
                         </div>
                         <div class="row justify-content-center">

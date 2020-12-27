@@ -3,10 +3,11 @@
         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">To log in please login first!</div>');
         redirect ('login'); 
     }
-    if($_SESSION['level']<>"admin"){
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">You do not have access admin</div>');
-        redirect ('login');
-        // ('login');
+    if($_SESSION['level']<>"admin" ){
+        if($_SESSION['level']<>"manager"){
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">You do not have access admin</div>');
+            redirect ('login');
+        }
     }
 ?>
 <!DOCTYPE html>
