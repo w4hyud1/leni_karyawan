@@ -39,8 +39,8 @@
                 }
             //cek clock out
             }else{
-                $cek = $this->db->query("select * from absensi where nik='$nik' and date='$date' and clock_out<>NUll")->num_rows();
-                if($cek==0){
+                $cek = $this->db->query("select * from absensi where nik='$nik' and date='$date'")->num_rows();
+                if($cek>0){
                     $data = array (
                             'clock_out' => date("G:i:s"),
                             'activity'  => $this->input->post('activity'),
@@ -52,6 +52,17 @@
                     );
                     $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Add Absensi success</div>');
                     $this->absensi_m->update_clock_out($data, $data_where);
+                    redirect ('absensi');
+                }elseif($cek==0){
+                    $data = array (
+                        'nik'       => $this->input->post('nik'),
+                        'date'      => date("Y-m-d"),
+                        'clock_out'  => date("G:i:s"),
+                        'activity'  => $this->input->post('activity'),
+                        'remarks'   => $this->input->post('remarks')
+                    );
+                    $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Add Absensi success</div>');
+                    $this->absensi_m->save_data($data);
                     redirect ('absensi');
                 }else{
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">you are already absensi</div>');
