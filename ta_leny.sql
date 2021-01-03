@@ -34,7 +34,9 @@ CREATE TABLE `absensi` (
 
 insert  into `absensi`(`nik`,`date`,`clock_in`,`clock_out`,`activity`,`remarks`) values 
 ('20200040','2020-12-21','21:07:57','21:08:14','Update Data','WFH'),
-('20200040','2020-12-22','21:08:59',NULL,NULL,NULL);
+('20200040','2020-12-22','21:08:59',NULL,NULL,NULL),
+('20200040','2021-01-01','14:30:00','15:06:44','update data karyawan','WFH'),
+('20200040','2021-01-03',NULL,'15:14:43','update data karyawan','WFH');
 
 /*Table structure for table `absensi_old` */
 
@@ -179,7 +181,7 @@ CREATE TABLE `cuti` (
   `status` enum('Approve','Pending','Cancel') DEFAULT NULL,
   `adddate` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 /*Data for the table `cuti` */
 
@@ -188,7 +190,8 @@ insert  into `cuti`(`id`,`nik`,`date`,`activity`,`remarks`,`status`,`adddate`) v
 (9,'20200040','2019-12-08','Cuti Tahunan','Urusan keluarga','Approve','2020-12-22 09:13:38'),
 (12,'20170039','2020-12-01','Cuti Tahunan','aa','Approve',NULL),
 (13,'20170039','2020-12-02','Cuti Tahunan','bb','Approve',NULL),
-(14,'20200040','2020-12-01','Mangkir','Tidak Masuk Kerja','Approve',NULL);
+(14,'20200040','2020-12-01','Mangkir','Tidak Masuk Kerja','Approve',NULL),
+(15,'20200040','2020-12-02','izin sakit','anak sedang sakit','Pending',NULL);
 
 /*Table structure for table `employee` */
 
@@ -232,7 +235,7 @@ CREATE TABLE `employee` (
 
 insert  into `employee`(`nik`,`name`,`id_client`,`position`,`birth_date`,`birth_place`,`gender`,`blood_type`,`marital_status`,`religion`,`cityzenship`,`phone`,`email`,`id_type`,`id_number`,`card_expired`,`street`,`city`,`country`,`state`,`original_street`,`original_city`,`npwp`,`ptkp_code`,`ptkp_name`,`education_level`,`education_major`,`institution_name`,`graduation_year`,`billing_rate`) values 
 ('20170039','TERRY TIFANY MANDAGIE','19','IT Software Quality Assurance','1990-02-21','MANADO','MALE','B','Married','Katolik','DKI JAKARTA','089699727786','terrymandagie@gmail.com','KTP','3175032102900004','SEUMUR HIDUP','CIPINANG PULO NO. 8 RT 011 RW 012, CIPINANG BESAR UTARA, JATINEGARA','DKI JAKARTA','INDONESIA','JAKARTA TIMUR','CIPINANG PULO NO. 8 RT 011 RW 012, CIPINANG BESAR UTARA, JATINEGARA','DKI JAKARTA','66.912.711.0-002.000','K/0',NULL,'S1','TEKNIK INFORMATIKA','UNIVERSITAS ADVENT INDONESIA',2013,''),
-('20200040','Wahyudi','18','IT Software Quality Assurance','1991-03-29','Bogor','Male','A','Married','Islam','123','123456789','wahyudi.bayunk@gmail.com','KTP','123456789','Life Time','Jl. R. H. Panji Kp. Masjid','Bogor','Indonesia','Jawa Barat','Jl. R. H. Panji Kp. Masjid','Bogor','123456789','123456',NULL,'SI','IT','Universitas Indraprasta',2016,'2020');
+('20200040','Wahyudi','18','IT Software Quality Assurance','1991-12-29','Bogor','Male','A','Married','Islam','123','123456789','wahyudi.bayunk@gmail.com','KTP','123456789','Life Time','Jl. R. H. Panji Kp. Masjid','Bogor','Indonesia','Jawa Barat','Jl. R. H. Panji Kp. Masjid','Bogor','123456789','123456',NULL,'SI','IT','Universitas Indraprasta',2016,'2020');
 
 /*Table structure for table `employee_bank` */
 
@@ -273,8 +276,8 @@ CREATE TABLE `employee_status` (
 /*Data for the table `employee_status` */
 
 insert  into `employee_status`(`nik`,`join_date`,`end_date`,`inactive_date`,`inactive_reason`,`contract_of_period`,`cuti`,`status`,`upddate`) values 
-('20170039','2018-08-17','2021-01-31','0000-00-00','',3,10,'Active','2020-12-26 19:41:51'),
-('20200040','2020-10-25','2021-10-31','0000-00-00','',1,1,'Active','2020-12-26 19:41:51');
+('20170039','2018-08-17','2021-01-31','0000-00-00','',3,8,'Active','2021-01-03 14:52:37'),
+('20200040','2020-10-25','2021-10-31','0000-00-00','',1,12,'Active','2020-12-27 18:59:58');
 
 /*Table structure for table `list_cuti` */
 
@@ -306,14 +309,15 @@ CREATE TABLE `list_national_holiday` (
   `name_holiday` varchar(100) DEFAULT NULL,
   `date` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 /*Data for the table `list_national_holiday` */
 
 insert  into `list_national_holiday`(`id`,`name_holiday`,`date`) values 
 (3,'Hari Raya Natal','2020-12-25'),
 (4,'Cuti Bersama Natal','2020-12-24'),
-(5,'Cuti Bersama Tahun Baru','2020-12-31');
+(5,'Cuti Bersama Tahun Baru','2020-12-31'),
+(6,'Libur Tahun Baru 2021','2021-01-01');
 
 /*Table structure for table `position` */
 
@@ -348,43 +352,115 @@ CREATE TABLE `report_absensi` (
 /*Data for the table `report_absensi` */
 
 insert  into `report_absensi`(`nik`,`date`,`day`,`clock_in`,`clock_out`,`activity`,`remarks`) values 
-('20200040','2020-12-01','Tuesday',NULL,NULL,'Mangkir','Tidak Masuk Kerja'),
-('20200040','2020-12-02','Wednesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-03','Thursday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-04','Friday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-05','Saturday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-06','Sunday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-07','Monday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-08','Tuesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-09','Wednesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-10','Thursday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-11','Friday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-12','Saturday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-13','Sunday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-14','Monday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-15','Tuesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-16','Wednesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-17','Thursday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-18','Friday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-19','Saturday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-20','Sunday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-21','Monday','21:07:57','21:08:14','Update Data','WFH'),
-('20200040','2020-12-22','Tuesday','21:08:59',NULL,NULL,'Lupa Absen Pulang'),
-('20200040','2020-12-23','Wednesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-24','Thursday',NULL,NULL,NULL,'Cuti Bersama Natal'),
-('20200040','2020-12-25','Friday',NULL,NULL,NULL,'Hari Raya Natal'),
-('20200040','2020-12-26','Saturday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-27','Sunday',NULL,NULL,NULL,'Weekend'),
-('20200040','2020-12-28','Monday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-29','Tuesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-30','Wednesday',NULL,NULL,NULL,'Mangkir'),
-('20200040','2020-12-31','Thursday',NULL,NULL,NULL,'Cuti Bersama Tahun Baru');
+('20200040','2021-01-01','Friday','14:30:00','15:06:44','update data karyawan','Libur Tahun Baru 2021'),
+('20200040','2021-01-02','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-03','Sunday',NULL,'15:14:43','update data karyawan','WFH'),
+('20200040','2021-01-04','Monday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-05','Tuesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-06','Wednesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-07','Thursday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-08','Friday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-09','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-10','Sunday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-11','Monday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-12','Tuesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-13','Wednesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-14','Thursday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-15','Friday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-16','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-17','Sunday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-18','Monday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-19','Tuesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-20','Wednesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-21','Thursday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-22','Friday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-23','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-24','Sunday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-25','Monday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-26','Tuesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-27','Wednesday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-28','Thursday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-29','Friday',NULL,NULL,NULL,'Mangkir'),
+('20200040','2021-01-30','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','2021-01-31','Sunday',NULL,NULL,NULL,'Weekend');
+
+/*Table structure for table `report_spl` */
+
+DROP TABLE IF EXISTS `report_spl`;
+
+CREATE TABLE `report_spl` (
+  `nik` varchar(20) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `date` date NOT NULL,
+  `day` varchar(20) DEFAULT NULL,
+  `clock_in` time DEFAULT NULL,
+  `clock_out` time DEFAULT NULL,
+  `total_hour` int(11) DEFAULT NULL,
+  `activity` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`nik`,`date`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `report_spl` */
+
+insert  into `report_spl`(`nik`,`name`,`date`,`day`,`clock_in`,`clock_out`,`total_hour`,`activity`) values 
+('20200040','Wahyudi','2020-12-01','Tuesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-02','Wednesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-03','Thursday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-04','Friday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-05','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-06','Sunday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-07','Monday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-08','Tuesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-09','Wednesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-10','Thursday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-11','Friday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-12','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-13','Sunday','09:00:00','18:00:00',4,'Lembur Tanggal Merah'),
+('20200040','Wahyudi','2020-12-14','Monday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-15','Tuesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-16','Wednesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-17','Thursday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-18','Friday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-19','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-20','Sunday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-21','Monday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-22','Tuesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-23','Wednesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-24','Thursday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-25','Friday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-26','Saturday',NULL,NULL,NULL,'Weekend'),
+('20200040','Wahyudi','2020-12-27','Sunday','09:00:00','18:00:00',8,'Lembur di hari minggu'),
+('20200040','Wahyudi','2020-12-28','Monday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-29','Tuesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-30','Wednesday',NULL,NULL,NULL,NULL),
+('20200040','Wahyudi','2020-12-31','Thursday',NULL,NULL,NULL,NULL);
+
+/*Table structure for table `sick` */
+
+DROP TABLE IF EXISTS `sick`;
+
+CREATE TABLE `sick` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `nik` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `activity` varchar(100) DEFAULT NULL,
+  `remarks` varchar(100) DEFAULT NULL,
+  `status` enum('Approve','Pending','Cancel') DEFAULT NULL,
+  `adddate` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`,`nik`,`date`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+/*Data for the table `sick` */
+
+insert  into `sick`(`id`,`nik`,`date`,`activity`,`remarks`,`status`,`adddate`) values 
+(2,'20200040','2020-12-28','izin sakit','Anak sedang sakit','Approve',NULL);
 
 /*Table structure for table `spl` */
 
 DROP TABLE IF EXISTS `spl`;
 
 CREATE TABLE `spl` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
   `nik` varchar(20) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `date` date NOT NULL,
@@ -392,17 +468,17 @@ CREATE TABLE `spl` (
   `clock_out` time DEFAULT NULL,
   `total_hour` int(11) DEFAULT NULL,
   `convertion_hour` varchar(20) DEFAULT NULL,
+  `status` enum('Pending','Approve','Cancel') NOT NULL DEFAULT 'Pending',
   `activity` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`nik`,`date`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`,`nik`,`date`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 /*Data for the table `spl` */
 
-insert  into `spl`(`nik`,`name`,`date`,`clock_in`,`clock_out`,`total_hour`,`convertion_hour`,`activity`) values 
-('2020','Wahyudi','2020-09-13','08:00:00','17:00:00',0,NULL,'Tanggal Merah Hari raya'),
-('2020','Wahyudi','2020-12-14','18:00:00','21:00:00',3,NULL,'aaa'),
-('admin','Leni','2020-09-01','17:00:00','22:00:00',4,NULL,'ngerjain Project'),
-('admin','Leni','2020-09-03','16:00:00','20:00:00',5,NULL,'Rapihin berkas');
+insert  into `spl`(`id`,`nik`,`name`,`date`,`clock_in`,`clock_out`,`total_hour`,`convertion_hour`,`status`,`activity`) values 
+(5,'20200040','Wahyudi','2020-12-13','09:00:00','18:00:00',4,NULL,'Approve','Lembur Tanggal Merah'),
+(6,'20200040','Wahyudi','2020-12-27','09:00:00','18:00:00',8,NULL,'Approve','Lembur di hari minggu'),
+(8,'20170039','TERRY TIFANY MANDAGIE','2020-12-01','18:00:00','22:00:00',4,NULL,'Approve','Lembur kelarin kerjaan');
 
 /*Table structure for table `user_login` */
 
