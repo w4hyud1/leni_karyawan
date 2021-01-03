@@ -21,6 +21,7 @@
                             FROM employee_status WHERE TIMESTAMPDIFF(MONTH, end_date, NOW())>=2 AND inactive_date='0000-00-00'");
        }
 
+    //    cek command
        function count_employee_danger(){
         return $this->db->query("SELECT 
                                     COUNT(*) AS jml,
