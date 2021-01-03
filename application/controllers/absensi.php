@@ -26,7 +26,9 @@
                     $data = array (
                             'nik'       => $this->input->post('nik'),
                             'date'      => date("Y-m-d"),
-                            'clock_in'  => date("G:i:s")
+                            'clock_in'  => date("G:i:s"),
+                            'activity'  => $this->input->post('activity'),
+                            'remarks'   => $this->input->post('remarks')
                     );
                     $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Add Absensi success</div>');
                     $this->absensi_m->save_data($data);
