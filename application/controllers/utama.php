@@ -17,8 +17,8 @@ class Utama extends CI_Controller {
         $data['employee_all']       = $this->utama_m->count_employee_all()->row();
         $data['employee_warning']   = $this->utama_m->count_employee_warning()->row();
         $data['employee_danger']    = $this->utama_m->count_employee_danger()->row();
-        $data['count_alert_cuti']    = $this->utama_m->count_alert_cuti()->row();
-        $data['get_data']          = $this->utama_m->get_all()->result();
+        $data['count_alert_cuti']   = $this->utama_m->count_alert_cuti()->row();
+        $data['get_data']           = $this->utama_m->get_all()->result();
         $data['page_content'] 	    = "home_v";
         $this->load->view('utama_v',$data);
     }
@@ -29,6 +29,5 @@ class Utama extends CI_Controller {
         $data['page_content'] 	= "import_v";
 		$this->load->view('utama_v',$data);
     }
-
 	
 }
