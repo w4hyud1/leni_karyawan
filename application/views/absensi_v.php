@@ -1,5 +1,6 @@
 <?php
     if(empty($_SESSION['username'])){
+        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Please login timesheet</div>');
         redirect ('login');
         // ('login');
     }

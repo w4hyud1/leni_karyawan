@@ -12,7 +12,7 @@
             $nik    = $_SESSION['username'];
             $this->employee_status_m->set_cuti();
             $this->employee_status_m->set_cuti_12();
-            $this->employee_status_m->update_cuti();
+            $this->employee_status_m->update_cuti2();
             $data['get_data']   = $this->cuti_m->get_data_where()->result();
             $data['count_cuti'] = $this->cuti_m->count_cuti()->row();
             $data['list_cuti'] = $this->cuti_m->list_cuti()->result();
