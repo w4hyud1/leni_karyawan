@@ -18,7 +18,7 @@
             return $this->db->query("SELECT 
                                 COUNT(*) AS jml,
                                 TIMESTAMPDIFF(MONTH, end_date, NOW()) AS selisih_bulan 
-                            FROM employee_status WHERE TIMESTAMPDIFF(MONTH, end_date, NOW())<=2 AND inactive_date='0000-00-00'");
+                            FROM employee_status WHERE TIMESTAMPDIFF(MONTH, end_date, NOW())>=2 AND inactive_date='0000-00-00'");
        }
 
        function count_employee_danger(){

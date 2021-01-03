@@ -9,6 +9,10 @@ class Employee_status_m extends CI_Model{
     function get_all_where($status){
         if($status=="active"){
             $query = $this->db->query("SELECT es.*, e.name FROM employee_status es LEFT JOIN employee e ON es.nik=e.nik WHERE inactive_date = '0000-00-00'");
+        }elseif($status=='cek'){
+            $query = $this->db->query("SELECT 
+            es.* ,e.name, TIMESTAMPDIFF(MONTH, es.end_date, NOW()) AS selisih
+            FROM employee_status AS es LEFT JOIN employee AS e ON es.nik=e.nik WHERE TIMESTAMPDIFF(MONTH, es.end_date, NOW())>=2 AND es.inactive_date='0000-00-00'");
         }else{
             $query = $this->db->query("SELECT es.*, e.name FROM employee_status es LEFT JOIN employee e ON es.nik=e.nik WHERE inactive_date <> '0000-00-00'");
         }

@@ -24,7 +24,7 @@
                                     <div class="card bg-warning text-white mb-4">
                                         <div class="card-body">Employees Approaching Inactive <?php echo $employee_warning->jml?></div>
                                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                            <a class="small text-white stretched-link" href="<?php echo base_url()?>employee_status">View Details</a>
+                                            <a class="small text-white stretched-link" href="<?php echo base_url()?>employee_status?status=cek">View Details</a>
                                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                         </div>
                                     </div>

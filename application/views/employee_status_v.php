@@ -23,6 +23,7 @@
                                            <select name='status' class="form-control" id="validationDefault02">
                                                 <option value="active">Active</option>
                                                 <option value="inactive">Inactive</option>
+                                                <option value="cek">Cek</option>
                                             </select>
                                         </div>
                                     </div>
