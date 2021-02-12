@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-12T11:33:00.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="IkJCB27XUwZ_Vv8mCBy8" version="14.3.1" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-02-12T11:35:01.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="uzafIWP11Ame_xBrzi5x" version="14.3.1" type="github" pages="6">
   <diagram id="w3o611-m6IItsd9GuGvY" name="erd">
     <mxGraphModel dx="868" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -1554,7 +1554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Q-PYcRCA14f7s2ywQo6A" name="Page-6">
-    <mxGraphModel dx="723" dy="410" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="6XXw1JS7KmrAqSxM4Zud-0" />
         <mxCell id="6XXw1JS7KmrAqSxM4Zud-1" parent="6XXw1JS7KmrAqSxM4Zud-0" />
@@ -1572,7 +1572,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="g80tdb9zBBgSJptmkOSi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6XXw1JS7KmrAqSxM4Zud-1" source="g80tdb9zBBgSJptmkOSi-2" target="g80tdb9zBBgSJptmkOSi-6">
+        <mxCell id="g80tdb9zBBgSJptmkOSi-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="6XXw1JS7KmrAqSxM4Zud-1" source="g80tdb9zBBgSJptmkOSi-2" target="g80tdb9zBBgSJptmkOSi-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g80tdb9zBBgSJptmkOSi-2" value="Kelola Document" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
@@ -1604,10 +1604,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g80tdb9zBBgSJptmkOSi-6" value="Manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
-          <mxGeometry x="185" y="584" width="30" height="60" as="geometry" />
+          <mxGeometry x="185" y="644" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g80tdb9zBBgSJptmkOSi-7" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
-          <mxGeometry x="140" y="694" width="120" height="80" as="geometry" />
+          <mxGeometry x="140" y="754" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="g80tdb9zBBgSJptmkOSi-15" value="Document di kembalikan jika ada yang kuran" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
           <mxGeometry x="50" y="524" width="110" height="20" as="geometry" />
@@ -1671,6 +1671,12 @@
         </mxCell>
         <mxCell id="g80tdb9zBBgSJptmkOSi-31" value="Report data absen dan overtime" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
           <mxGeometry x="460" y="570" width="120" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="g80tdb9zBBgSJptmkOSi-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6XXw1JS7KmrAqSxM4Zud-1" source="g80tdb9zBBgSJptmkOSi-35" target="g80tdb9zBBgSJptmkOSi-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g80tdb9zBBgSJptmkOSi-35" value="Report document" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="6XXw1JS7KmrAqSxM4Zud-1">
+          <mxGeometry x="140" y="560" width="120" height="66" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
