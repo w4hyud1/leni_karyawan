@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-12T12:42:41.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="v4fsIefnD3ViDwZzHy2R" version="14.3.1" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2021-02-12T13:17:01.544Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="Il-3CEUCc7SXSnQ1YQMi" version="14.3.1" type="github" pages="7">
   <diagram id="w3o611-m6IItsd9GuGvY" name="erd">
-    <mxGraphModel dx="868" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1240" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -60,13 +60,13 @@
         <mxCell id="FgOhWPreDcGsdZi0qV6i-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="FgOhWPreDcGsdZi0qV6i-22" target="FgOhWPreDcGsdZi0qV6i-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgOhWPreDcGsdZi0qV6i-22" value="Mempunyai" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FgOhWPreDcGsdZi0qV6i-22" value="punya" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="200" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FgOhWPreDcGsdZi0qV6i-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="FgOhWPreDcGsdZi0qV6i-23" target="FgOhWPreDcGsdZi0qV6i-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgOhWPreDcGsdZi0qV6i-23" value="Mempunyai" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FgOhWPreDcGsdZi0qV6i-23" value="punya" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="200" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FgOhWPreDcGsdZi0qV6i-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="FgOhWPreDcGsdZi0qV6i-24" target="FgOhWPreDcGsdZi0qV6i-23" edge="1">
@@ -110,7 +110,7 @@
         <mxCell id="FgOhWPreDcGsdZi0qV6i-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#000000;" parent="1" source="FgOhWPreDcGsdZi0qV6i-44" target="FgOhWPreDcGsdZi0qV6i-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgOhWPreDcGsdZi0qV6i-44" value="Mempunyai" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FgOhWPreDcGsdZi0qV6i-44" value="punya" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="170" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FgOhWPreDcGsdZi0qV6i-45" value="employe_status" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -165,7 +165,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="uxzdlCek4ODaHwb-eNjM" name="LRS">
-    <mxGraphModel dx="868" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="4Zz9K3KWUpmg_ewer66d-0" />
         <mxCell id="4Zz9K3KWUpmg_ewer66d-1" parent="4Zz9K3KWUpmg_ewer66d-0" />
