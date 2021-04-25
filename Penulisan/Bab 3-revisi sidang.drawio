@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-25T16:40:17.124Z" agent="5.0 (Windows)" etag="FvqA2PZ0JkBtLonSJ_Iv" version="14.6.5" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-25T16:41:38.072Z" agent="5.0 (Windows)" etag="jwxasOb4rVpWSVeJXvYC" version="14.6.5" type="github" pages="8">
   <diagram id="w3o611-m6IItsd9GuGvY" name="erd">
     <mxGraphModel dx="1185" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -861,7 +861,7 @@
         <mxCell id="lcP_iRiQ-UJuvSDZQaTK-17" value="karyawan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="D19DZX_LPzmpLw0nfiir-1" vertex="1">
           <mxGeometry x="860" y="635" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lcP_iRiQ-UJuvSDZQaTK-48" value="System Informasi Employee &lt;span&gt;PT Avows Technologies&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="D19DZX_LPzmpLw0nfiir-1" vertex="1">
+        <mxCell id="lcP_iRiQ-UJuvSDZQaTK-48" value="System Informasi Karyawan &lt;span&gt;PT Avows Technologies&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="D19DZX_LPzmpLw0nfiir-1" vertex="1">
           <mxGeometry x="240" y="80" width="560" height="20" as="geometry" />
         </mxCell>
       </root>
