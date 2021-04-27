@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T13:49:57.848Z" agent="5.0 (Windows)" etag="GkA43N4baH1trBpz4Se3" version="14.6.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-04-27T14:58:06.317Z" agent="5.0 (Windows)" etag="SmCzGfNOKvzmcAcuYYj7" version="14.6.6" type="github" pages="2">
   <diagram id="mtBHWYNByoEXzdDorYb6" name="Page-1">
     <mxGraphModel dx="813" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -943,8 +943,8 @@
         <mxCell id="5ZFptgAUrvnMhrSEWL7E-4" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="204" y="560" width="570" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="doo02vCnR_QYg1kmZy5R-67" value="Search" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="5ZFptgAUrvnMhrSEWL7E-4" vertex="1">
-          <mxGeometry x="437" width="57" height="14.864864864864863" as="geometry" />
+        <mxCell id="doo02vCnR_QYg1kmZy5R-67" value="Pencarian" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="5ZFptgAUrvnMhrSEWL7E-4" vertex="1">
+          <mxGeometry x="431" width="57" height="14.864864864864863" as="geometry" />
         </mxCell>
         <mxCell id="doo02vCnR_QYg1kmZy5R-74" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#FFFFFF;" parent="5ZFptgAUrvnMhrSEWL7E-4" vertex="1">
           <mxGeometry x="494" width="75.99999999999999" height="14.864864864864863" as="geometry" />
