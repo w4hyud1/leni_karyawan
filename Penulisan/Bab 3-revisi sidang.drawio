@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-28T15:21:42.676Z" agent="5.0 (Windows)" etag="aIj6nCeoLzInN2_ysDYE" version="14.6.6" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-28T15:38:50.634Z" agent="5.0 (Windows)" etag="GjatFIQjj2JzGtwhgdSe" version="14.6.6" type="github" pages="8">
   <diagram id="w3o611-m6IItsd9GuGvY" name="erd">
     <mxGraphModel dx="1422" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -936,7 +936,7 @@
         <mxCell id="iWy5LJWB-C_xZ0n7oQ0--30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="iWy5LJWB-C_xZ0n7oQ0--1" source="iWy5LJWB-C_xZ0n7oQ0--15" target="iWy5LJWB-C_xZ0n7oQ0--27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-0" value="Activity diagram master karyawan" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-0" value="Activity diagram karyawan" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="560" y="40" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-1" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-0" vertex="1">
@@ -972,7 +972,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-15" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-21" value="Form data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-21" value="Form input data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-6" value="Pilih data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
@@ -992,7 +992,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-0" source="bylhNTFEndwzzoGi6MjD-21" target="bylhNTFEndwzzoGi6MjD-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-28" value="Activity diagram master posisi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-28" value="Activity diagram posisi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="40" y="560" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-29" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-28" vertex="1">
@@ -1028,7 +1028,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-39" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-40" value="Form data posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-40" value="Form input data posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-41" value="Pilih posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
@@ -1048,7 +1048,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-28" source="bylhNTFEndwzzoGi6MjD-40" target="bylhNTFEndwzzoGi6MjD-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-46" value="Activity diagram master client" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-46" value="Activity diagram klien" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="560" y="560" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-47" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-46" vertex="1">
@@ -1066,7 +1066,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-51" value="mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-47" vertex="1">
           <mxGeometry x="135" y="45" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-52" value="Masukan data client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-47" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-52" value="Masukan data klien" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-47" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-53" value="System" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-46" vertex="1">
@@ -1075,7 +1075,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-54" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-53" source="bylhNTFEndwzzoGi6MjD-55" target="bylhNTFEndwzzoGi6MjD-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-55" value="Simpan data position" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-55" value="Simpan data klien" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
           <mxGeometry x="40" y="260" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-56" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
@@ -1084,10 +1084,10 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-57" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-58" value="Form new data client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-58" value="Form input data klien" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-59" value="Pilih master client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-59" value="Pilih klien" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-53" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-60" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-53" source="bylhNTFEndwzzoGi6MjD-59" edge="1">
@@ -1104,7 +1104,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-46" source="bylhNTFEndwzzoGi6MjD-58" target="bylhNTFEndwzzoGi6MjD-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-64" value="Activity diagram master employee status" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-64" value="Activity diagram status karyawan" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="40" y="1000" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-65" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-64" vertex="1">
@@ -1122,7 +1122,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-69" value="mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-65" vertex="1">
           <mxGeometry x="135" y="45" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-70" value="Masukan data employee status" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-65" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-70" value="Masukan data status karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-65" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-71" value="System" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-64" vertex="1">
@@ -1131,7 +1131,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-72" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-71" source="bylhNTFEndwzzoGi6MjD-73" target="bylhNTFEndwzzoGi6MjD-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-73" value="Simpan data employee status" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-73" value="Simpan data status karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
           <mxGeometry x="40" y="260" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-74" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
@@ -1140,10 +1140,10 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-75" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-76" value="Form edit employee status" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-76" value="Form ubah status karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-77" value="Pilih master employee status" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-77" value="Pilih status karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-71" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-78" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-71" source="bylhNTFEndwzzoGi6MjD-77" edge="1">
@@ -1196,7 +1196,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-11" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-7" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-12" value="Form new data absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-7" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-12" value="Form input data absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-7" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-13" value="Pilih absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-7" vertex="1">
@@ -1216,7 +1216,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-0" source="PyNslQ7VdBgJ6ACEJzkX-12" target="PyNslQ7VdBgJ6ACEJzkX-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-18" value="Activity diagram overtime" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-18" value="Activity diagram lembur" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="40" y="1440" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-19" value="User" style="swimlane;html=1;startSize=20;" parent="PyNslQ7VdBgJ6ACEJzkX-18" vertex="1">
@@ -1234,7 +1234,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-23" value="mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-19" vertex="1">
           <mxGeometry x="135" y="45" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-24" value="Masukan data overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-19" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-24" value="Masukan data lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-19" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-25" value="System" style="swimlane;html=1;startSize=20;" parent="PyNslQ7VdBgJ6ACEJzkX-18" vertex="1">
@@ -1243,7 +1243,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-25" source="PyNslQ7VdBgJ6ACEJzkX-27" target="PyNslQ7VdBgJ6ACEJzkX-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-27" value="Simpan data overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-27" value="Simpan data lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
           <mxGeometry x="40" y="260" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-28" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
@@ -1252,10 +1252,10 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-29" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-30" value="Form new data overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-30" value="Form input data lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-31" value="Pilih overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-31" value="Pilih lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-25" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-25" source="PyNslQ7VdBgJ6ACEJzkX-31" edge="1">
@@ -1308,7 +1308,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-47" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-43" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-48" value="Form new data cuti" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-43" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-48" value="Form input data cuti" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-43" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-49" value="Pilih cuti" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-43" vertex="1">
@@ -1364,7 +1364,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-65" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-61" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-66" value="Form new data izin sakit" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-61" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-66" value="Form input data izin sakit" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-61" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-67" value="Pilih izin sakit" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-61" vertex="1">
@@ -1384,7 +1384,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-54" source="PyNslQ7VdBgJ6ACEJzkX-66" target="PyNslQ7VdBgJ6ACEJzkX-60" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-72" value="Activity diagram report absensi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-72" value="Activity diagram laporan absensi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="560" y="1880" width="480" height="440" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-73" value="User" style="swimlane;html=1;startSize=20;" parent="PyNslQ7VdBgJ6ACEJzkX-72" vertex="1">
@@ -1405,10 +1405,10 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF0000;fontColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-73" source="PyNslQ7VdBgJ6ACEJzkX-78" target="PyNslQ7VdBgJ6ACEJzkX-90" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-78" value="view absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-73" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-78" value="Tampilkan absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-73" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-90" value="Export data absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-73" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-90" value="Download data absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-73" vertex="1">
           <mxGeometry x="40" y="290" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-79" value="System" style="swimlane;html=1;startSize=20;" parent="PyNslQ7VdBgJ6ACEJzkX-72" vertex="1">
@@ -1417,7 +1417,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-80" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-79" source="PyNslQ7VdBgJ6ACEJzkX-81" target="PyNslQ7VdBgJ6ACEJzkX-82" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-81" value="Download report absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-81" value="Download laporan absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
           <mxGeometry x="40" y="290" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-82" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
@@ -1429,7 +1429,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-84" value="Form filter data absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-85" value="Pilih report absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-85" value="Pilih laporan absensi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-79" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-79" source="PyNslQ7VdBgJ6ACEJzkX-85" edge="1">
@@ -1446,7 +1446,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF0000;fontColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-72" source="PyNslQ7VdBgJ6ACEJzkX-90" target="PyNslQ7VdBgJ6ACEJzkX-81" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-93" value="Activity diagram report overtime" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-93" value="Activity diagram report lembur" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="40" y="2360" width="480" height="440" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-94" value="User" style="swimlane;html=1;startSize=20;" parent="PyNslQ7VdBgJ6ACEJzkX-93" vertex="1">
@@ -1467,7 +1467,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF0000;fontColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-94" source="PyNslQ7VdBgJ6ACEJzkX-100" target="PyNslQ7VdBgJ6ACEJzkX-101" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-100" value="view overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-94" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-100" value="tampilan lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-94" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-101" value="Export data overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-94" vertex="1">
@@ -1479,7 +1479,7 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-103" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-102" source="PyNslQ7VdBgJ6ACEJzkX-104" target="PyNslQ7VdBgJ6ACEJzkX-105" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-104" value="Download report overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-104" value="Download laporan lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
           <mxGeometry x="40" y="290" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-105" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
@@ -1488,10 +1488,10 @@
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-106" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
           <mxGeometry x="139" y="365" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-107" value="Form filter data overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-107" value="Form filter data lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-108" value="Pilih report overtime" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
+        <mxCell id="PyNslQ7VdBgJ6ACEJzkX-108" value="Pilih laporan lembur" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="PyNslQ7VdBgJ6ACEJzkX-102" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PyNslQ7VdBgJ6ACEJzkX-109" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="PyNslQ7VdBgJ6ACEJzkX-102" source="PyNslQ7VdBgJ6ACEJzkX-108" edge="1">
