@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-25T16:41:38.072Z" agent="5.0 (Windows)" etag="jwxasOb4rVpWSVeJXvYC" version="14.6.5" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2021-04-28T15:21:42.676Z" agent="5.0 (Windows)" etag="aIj6nCeoLzInN2_ysDYE" version="14.6.6" type="github" pages="8">
   <diagram id="w3o611-m6IItsd9GuGvY" name="erd">
-    <mxGraphModel dx="1185" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -936,7 +936,7 @@
         <mxCell id="iWy5LJWB-C_xZ0n7oQ0--30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="iWy5LJWB-C_xZ0n7oQ0--1" source="iWy5LJWB-C_xZ0n7oQ0--15" target="iWy5LJWB-C_xZ0n7oQ0--27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-0" value="Activity diagram master employee" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-0" value="Activity diagram master karyawan" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="560" y="40" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-1" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-0" vertex="1">
@@ -954,7 +954,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-8" value="mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-1" vertex="1">
           <mxGeometry x="135" y="45" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-22" value="Masukan data employee" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-22" value="Masukan data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-1" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-9" value="System" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-0" vertex="1">
@@ -963,7 +963,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-9" source="bylhNTFEndwzzoGi6MjD-13" target="bylhNTFEndwzzoGi6MjD-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-13" value="Simpan data employee" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-13" value="Simpan data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="40" y="260" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-14" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
@@ -972,10 +972,10 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-15" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-21" value="Form new data employee" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-21" value="Form data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-6" value="Pilih master employee" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-6" value="Pilih data karyawan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-9" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-9" source="bylhNTFEndwzzoGi6MjD-6" edge="1">
@@ -992,7 +992,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-0" source="bylhNTFEndwzzoGi6MjD-21" target="bylhNTFEndwzzoGi6MjD-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-28" value="Activity diagram master position" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-28" value="Activity diagram master posisi" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;sketch=0;strokeColor=#000000;strokeWidth=1;fillColor=none;align=left;" parent="iWy5LJWB-C_xZ0n7oQ0--1" vertex="1">
           <mxGeometry x="40" y="560" width="480" height="400" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-29" value="User" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-28" vertex="1">
@@ -1010,7 +1010,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-33" value="mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-29" vertex="1">
           <mxGeometry x="135" y="45" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-34" value="Masukan data position" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-29" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-34" value="Masukan data posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-29" vertex="1">
           <mxGeometry x="40" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-35" value="System" style="swimlane;html=1;startSize=20;" parent="bylhNTFEndwzzoGi6MjD-28" vertex="1">
@@ -1019,7 +1019,7 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-35" source="bylhNTFEndwzzoGi6MjD-37" target="bylhNTFEndwzzoGi6MjD-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-37" value="Simpan data position" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-37" value="Simpan data posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="40" y="260" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-38" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
@@ -1028,10 +1028,10 @@
         <mxCell id="bylhNTFEndwzzoGi6MjD-39" value="selesai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="139" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-40" value="Form new data position" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-40" value="Form data posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="40" y="160" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bylhNTFEndwzzoGi6MjD-41" value="Pilih master position" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
+        <mxCell id="bylhNTFEndwzzoGi6MjD-41" value="Pilih posisi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;sketch=0;align=center;" parent="bylhNTFEndwzzoGi6MjD-35" vertex="1">
           <mxGeometry x="-200" y="160" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bylhNTFEndwzzoGi6MjD-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeColor=#FF0000;" parent="bylhNTFEndwzzoGi6MjD-35" source="bylhNTFEndwzzoGi6MjD-41" edge="1">
